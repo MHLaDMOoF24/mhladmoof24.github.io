@@ -5,9 +5,29 @@ body {
     font-family: Arial, sans-serif;
     padding: 0px;
 }
-.textblock{
-    padding: 20px;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.textblock {
+    padding: 10px;
+    margin: 10px;
+    background: #ccc;
+    box-sizing: border-box;
+}
+    .textblock.half {
+        /* two columns: subtract both items' margins */
+        flex: 0 0 calc((100% - 40px)/2); /* 10+10 on each item = 40 */
+    }
+    /* On screens <= 600px wide, stack into one column */
+    @media (max-width: 600px) {
+        .textblock.half {
+            flex: 0 0 calc(100% - 20px);
+        }
+    }
+
 .subject {
     text-indent: 10px;
     font-size: 20px;
@@ -15,11 +35,13 @@ body {
     font-weight: bold;
     color: #3c3c3c;
 }
+
 .text {
     text-indent: 20px;
     font-style: italic;
     color: #5c5c5c;
 }
+
 .doubleindent {
     text-indent: 40px;
 }
