@@ -28,6 +28,26 @@ body {
         }
     }
 
+.textblock .item {
+    margin-bottom: 10px;
+}
+    .textblock .item h4 {
+        margin-bottom: 0px;
+    }
+    .textblock .item p {
+        margin-bottom: 5px;
+    }
+
+
+h4 {
+/*    margin-top: 0px;
+    margin-bottom: 0px;*/
+}
+h4 + p {
+    margin-top: 0px;    /* Controls gap before the paragraph below starts*/
+    margin-bottom: 0px;
+}
+
 .subject {
     text-indent: 10px;
     font-size: 20px;
@@ -37,11 +57,25 @@ body {
 }
 
 .text {
-    text-indent: 20px;
-    font-style: italic;
-    color: #5c5c5c;
+    text-indent: 0px;
 }
-
-.doubleindent {
-    text-indent: 40px;
-}
+    .text h1, .text h2 {
+        text-indent: 0px;
+        font-weight: bold;
+        margin: 0px;
+    }
+    .text h3, .text h4 {
+        text-indent: 10px;
+    }
+    .text p {
+        text-indent: 20px;
+        font-style: italic;
+        color: #5c5c5c;
+    }
+    .text.doubleindent {
+        text-indent: 40px;
+    }
+    .text span {
+        display: block;
+        text-indent: 20px;
+    }
