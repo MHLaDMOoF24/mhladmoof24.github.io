@@ -1,11 +1,9 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timetable</title>
-    <link rel="stylesheet" href="../styles.css" />
-</head>
-<body>
+---
+layout: default
+title: Timetable
+permalink: /pages/timetable.html
+---
+
     <div class="container">
         <div class="text textblock half">
             <h2>
@@ -40,5 +38,3 @@
             </h3>
         </div>
     </div>
-</body>
-</html>
