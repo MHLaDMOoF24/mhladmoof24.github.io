@@ -6,7 +6,7 @@ layout: default
     <p class="meta">
         <small>
             {{ page.date | date: "%Y-%m-%d" }}
-            {% if page.tags and page.tags.size > 0 %} — Tags:
+            {% if page.tags and page.tags.size > 0 %} â€” Tags:
             {% for t in page.tags %}
             <a href="{{ "/tags.html#tag-" | append: t | slugify | relative_url }}">{{ t }}</a>{% if forloop.last == false %}, {% endif %}
             {% endfor %}
