@@ -1,18 +1,15 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <div>
-        <p>
-            <a href="/overview.html">Portfolio</a>
-        </p>
-        <p>
-            <a href="/pages/feed/introductory.html">FBFUFF</a>
-        </p>
-    </div>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<h2>Seneste indlæg</h2>
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+        {% if post.tags %}<em> — {{ post.tags | join: ", " }}</em>{% endif %}
+    </li>
+    {% endfor %}
+</ul>

@@ -28,15 +28,15 @@ body {
         }
     }
 
-.textblock .item {
-    margin-bottom: 10px;
-}
-    .textblock .item h4 {
-        margin-bottom: 0px;
+    .textblock .item {
+        margin-bottom: 10px;
     }
-    .textblock .item p {
-        margin-bottom: 5px;
-    }
+        .textblock .item h4 {
+            margin-bottom: 0px;
+        }
+        .textblock .item p {
+            margin-bottom: 5px;
+        }
 
 
 h4 {

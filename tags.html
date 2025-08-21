@@ -1,0 +1,31 @@
+---
+
+### `tags.html`  *(a tag index page at the repo root)*
+```liquid
+---
+layout: default
+title: Tags
+---
+
+<h2>Tags</h2>
+{% if site.tags %}
+<ul>
+    {% for tag in site.tags %}
+    <li>
+        <a id="tag-{{ tag[0] | slugify }}"></a>
+        <strong>{{ tag[0] }}</strong> ({{ tag[1].size }})
+        <ul>
+            {% assign posts = tag[1] | sort: "date" | reverse %}
+            {% for post in posts %}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <small>— {{ post.date | date: "%Y-%m-%d" }}</small>
+            </li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Ingen tags endnu.</p>
+{% endif %}
