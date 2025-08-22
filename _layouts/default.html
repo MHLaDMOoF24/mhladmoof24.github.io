@@ -8,7 +8,9 @@
 </head>
 <body>
     <header class="site-header">
-        <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
+        <a href="{{ "/" | relative_url }}">
+            <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Logo" class="site-logo">
+        </a>
         <nav>
             <a href="{{ "/" | relative_url }}">Hjem</a>
             <a href="{{ "/pages/overview.html" | relative_url }}">Overview</a>

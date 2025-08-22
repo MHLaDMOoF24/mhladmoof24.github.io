@@ -79,3 +79,20 @@ h4 + p {
         display: block;
         text-indent: 20px;
     }
+
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+    .site-header a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .site-logo {
+        height: 48px;
+        width: auto;
+        vertical-align: middle;
+    }
