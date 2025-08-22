@@ -38,7 +38,7 @@ A better understanding of how to implement a website app.
 
 ## Feed Forward - Next Steps
 Continue to develop this portfolio website. It's still an obstacle to publishing these reports, but we're getting there.
-- This also doubles as a learning experience, to get more comfortable with the web as a platform.
+This also doubles as a learning experience, to get more comfortable with the web as a platform.
 Research Redis, a NoSQL database. 
 Continue to coordinate with group, until we have a reasonable set of expectations for the project.
 
