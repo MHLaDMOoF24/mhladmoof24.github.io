@@ -100,6 +100,7 @@ h4 + p {
 /* Global typography for Markdown content */
 .prose {
     max-width: 70ch;
+    padding-left: 8px;
 }
 
     .prose h1, .prose h2, .prose h3 {
@@ -108,7 +109,7 @@ h4 + p {
 
     .prose p {
         margin: .75rem 0;
-        text-indent: 80px;
+        padding-left: 8px;
     }
 
     .prose ul, .prose ol {
