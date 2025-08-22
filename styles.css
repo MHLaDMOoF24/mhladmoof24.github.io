@@ -108,6 +108,7 @@ h4 + p {
 
     .prose p {
         margin: .75rem 0;
+        text-indent: 80px;
     }
 
     .prose ul, .prose ol {
