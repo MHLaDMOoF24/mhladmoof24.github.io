@@ -45,4 +45,4 @@ Continue to coordinate with group, until we have a reasonable set of expectation
 ---
 
 ## Logo
-![And finally, this is our new logo!]({{ "/assets/images/manamanager.png" | relative_url }})
+![And finally, this is our new logo!]({{ "/assets/images/manemanager.png" | relative_url }})
