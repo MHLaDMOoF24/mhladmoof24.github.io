@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Week 1 – Initializing project"
-tags: [weekly, fbfuff]
+tags: [weekly, fbfuff, database, application]
 ---
 
 ## Feed Back - Reflections
