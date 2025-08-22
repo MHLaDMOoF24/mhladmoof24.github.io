@@ -96,3 +96,31 @@ h4 + p {
         width: auto;
         vertical-align: middle;
     }
+
+/* Global typography for Markdown content */
+.prose {
+    max-width: 70ch;
+}
+
+    .prose h1, .prose h2, .prose h3 {
+        margin: 1.5rem 0 .75rem;
+    }
+
+    .prose p {
+        margin: .75rem 0;
+    }
+
+    .prose ul, .prose ol {
+        margin: .75rem 0 .75rem 1.5rem;
+    }
+
+    .prose img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .prose hr {
+        margin: 2rem 0;
+    }
