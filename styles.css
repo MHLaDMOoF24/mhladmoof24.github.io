@@ -99,7 +99,7 @@ h4 + p {
 
 /* Global typography for Markdown content */
 .prose {
-    max-width: 70ch;
+    max-width: 80ch;
     padding-left: 8px;
 }
 
