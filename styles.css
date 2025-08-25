@@ -134,7 +134,7 @@ h4 + p {
         margin: 2rem 0;
     }
 
-    .prose note {
+    .prose .note {
         font-style: italic;
         color: #454545;
     }
