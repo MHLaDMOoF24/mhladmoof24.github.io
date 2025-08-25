@@ -29,9 +29,9 @@ Those not initially listed were as follows:
 
 While I can see the relevance, I don't see how they would be compared to the architectural types, like SQL.  
 Instead I'd put them into two, maybe three, categories.  
-Architectural: Relational, Non-relational, Object-oriented, Hierarchical, Network  
-Scale: Cloud-Based, Centralized, Personal  
-Purpose: Operational  
+**Architectural:** Relational, Non-relational, Object-oriented, Hierarchical, Network  
+**Scale:** Cloud-Based, Centralized, Personal  
+**Purpose:** Operational  
 
 ### Exploring the categories
 As a couple of examples of what these might be, a Personal database could be used on a phone to house contacts.  
