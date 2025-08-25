@@ -97,6 +97,13 @@ h4 + p {
         vertical-align: middle;
     }
 
+.post {
+
+}
+    .post h1 {
+        padding-left: 20px;
+    }
+
 /* Global typography for Markdown content */
 .prose {
     max-width: 80ch;
@@ -125,4 +132,9 @@ h4 + p {
 
     .prose hr {
         margin: 2rem 0;
+    }
+
+    .prose note {
+        font-style: italic;
+        color: #454545;
     }
