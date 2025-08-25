@@ -6,7 +6,7 @@ tags: [research, database]
 
 ## Baby steps
 ### A breadth of choice
-<span style="note">Initial research at <a href="https://www.geeksforgeeks.org/dbms/types-of-databases/">GeeksforGeeks<a/>.</span>  
+<span class="note">Initial research at <a href="https://www.geeksforgeeks.org/dbms/types-of-databases/">GeeksforGeeks</a>.</span>  
 What have I gotten myself into? Choosing a category of a category? Hopefully this rabbit hole isn't any deeper.  
 From what I've gathered in a few minutes of searching, I have six choices for my main category.  
 1. Relational (SQL)  
