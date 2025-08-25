@@ -38,4 +38,6 @@ As a couple of examples of what these might be, a Personal database could be use
 An Operational database could be used in a bank to handle transactions.  
 A Network database could be used to map out social connections.  
 These are all functional examples, but the underlying architecture could be completely different.  
-Alternatively, we could have a **Relational Centralized Data Warehouse** (unmentioned, but I'd label this as a Purpose). This would be touching all three categories, and fairly well nail down both purpose and functionality, without even touching on whatever solution it might be part of.  
+
+Alternatively, we could have a **"Relational" "Centralized" "Data Warehouse"** (unmentioned, but I'd label this as a Purpose).  
+This would be touching all three categories, and fairly well nail down both purpose and functionality, without even touching on whatever solution it might be part of.  
