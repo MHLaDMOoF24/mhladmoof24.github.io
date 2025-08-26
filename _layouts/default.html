@@ -17,9 +17,15 @@
             <a href="{{ "/tags.html" | relative_url }}">Tags</a>
         </nav>
     </header>
+
+    <hr />
+
     <main class="site-main">
         {{ content }}
     </main>
+
+    <hr />
+
     <footer class="site-footer">
         <small>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</small>
     </footer>
