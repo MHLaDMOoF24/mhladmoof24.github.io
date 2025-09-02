@@ -78,7 +78,7 @@ The data needs to be easily compared, which is a strong suit of relational datab
 
 ## PostgreSQL + Redis?
 ### A known SQuantityL
-Because of previous experience with T-SQL and the SSMS environment, PostgreSQL will be quick to pick up, as from a few searches on the internet, the languages are extremely similar.  
+Because of previous experience with T-SQL and the SSMS environment, PostgreSQL will be quick to pick up, as per a few searches on the internet, the languages seem extremely similar.  
 This is potentially an issue in terms of 'do I learn enough new stuff' in regards to my education, but an SQL variation seems to be the best fit for our project regardless.  
 <span class="note">Not much of an issue, by simply expanding the subject a bit I'll be fine.</span>  
 
