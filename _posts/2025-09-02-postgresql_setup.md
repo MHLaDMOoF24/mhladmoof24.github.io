@@ -1,73 +1,60 @@
 ---
 layout: post
-title: "PostgreSQL setup"
-tags: [production, database]
+title: "Finding a language to speak"
+tags: [research, application]
 ---
 
-<span class="note">This post mostly concerns networking, but considering contact to your database should be important to you, this seems fair to still work on...</span>
-
-## A new beginning
-### Previously, on this blog...
-We've chosen to go with a relational database for our project. One not connected to Microsoft, and therefore not T-SQL.  
-PostgreSQL seems to be the best fit for our project, and is what we'll be using.  
-Due to previous knowledge with SQL as a general language, I roughly know what to expect moving into it.  
-
-A Redis database is still in consideration for timeblock caching, but not something I'm focusing on right now.  
-
-
-### An alternative to the great Microsoft empire
-One asset I procured last semester, for the previous project, was a VPS from the webhost LeaseWeb.  
-Located in the Netherlands, it allowed us an escape from as much US influence as possible. The previous project didn't get to use it, but this time it's being set up from the very beginning.  
-Having chosen to go with a Linux base install, we have seperated ourselves from both Windows and Azure at the same time.  
-
-
-### Previous experience
-Linux. I know basically nothing. Anders took a stab at it last semester, but we never got the full setup going for the project itself to use.  
-It's also worth noting that we're using Ubuntu, as it's the most common distro, and therefore has the most documentation available.  
+## Yo, where we at
+### Modus operandi
+With our first priority (database setup) mostly worked out, we can now get started on preparing a face to show the world.  
+Since the database is in place, other members can now start storing whatever data they need in the format they want.  
+Database schema to be done later, placeholders can be used as inspiration or changed to suit our needs if they come close.  
 
 ---
 
-## The great frontier
-### Setting up PostgreSQL... on Linux!
-I knew I wanted to set up PostgreSQL on the VPS' Linux, but lacking previous experience with both systems, I had to look for sources. Luckily, Ubuntu's documentation has an article specifically for installing and configuring PostgreSQL.  
-Article in question: [https://documentation.ubuntu.com/server/how-to/databases/install-postgresql/](https://documentation.ubuntu.com/server/how-to/databases/install-postgresql/)  
+## The three parter
+### ~~Java~~TypeScript
+The bread and butter. It's a sidekick to JavaScript, that introduces types to JavaScript, making it easier to catch errors early and maintain larger projects.  
+Even if our project stays small, I like the clarity of types. It’s easier to read, reason about, and avoid silly mistakes.  
 
-Between the article and asking all my dumb questions to ChatGPT, I managed to get PostgreSQL installed and running with little to no issue.  
-Main concern turned out to be the networking side of things.  
+### React
+React handles our UI components. It’s a very popular framework with a lot of community support, and it’s flexible enough to be used for both web and mobile applications.  
+The idea of splitting UI into components feels familiar thanks to our earlier work with Blazor, so the transition doesn’t feel like starting from scratch.  
+Because React is as common as it is, there's a lot of material available for learning. This means I can expect to not be stuck on a problem for long.  
 
+#### Alternatives
+These are on the same level as React, and might be considered or experimented with at a later date.  
+- **Angular**: Framework, great if you want structure, but heavier to learn.  
+- **Vue**: Lightweight and beginner-friendly, but still powerful enough for complex apps.  
 
-### Networking woes
-By default, PostgreSQL only listens to connections from localhost. This is a security measure, but also a hindrance when trying to connect from my local machine.  
-Easy enough, change /postgresql.conf to listen_addresses = '*' (all IPv4 and IPv6). Put a pin in this enormous security risk for now.  
-Then change /pg_hba.conf to allow connections from your own IP.  
-And this is all covered in the Ubuntu article!  
+### Node.js
+This is a consideration if we want a backend to the website itself. We are, however, more on the idea of an API gateway, so this might not see the light of day. Separation of Concerns and all that.  
+With that said, it's not unlikely that this will still be a necessary component, as there might be things outside of the gateway's scope that needs to be handled.  
+Things like authentication, authorization, logging, or rate limiting might be handled by the website, rather than being forced through the API gateway.  
 
-... But also remember to open port 5432 (PostgreSQL's base port) in the Linux firewall, UFW.  
-Still didn't work, so I checked the status of the UFW. And it was inactive.  
+--- 
 
-What's kept my VPS safe from the rest of the internet is LeaseWeb's own firewall. So I had to log into their control panel, and allow my personal IP.  
-This gave me the hole I needed through.  
-
-Returning to that pin from earlier, the Linux UFW and LeaseWeb firewall are the things keeping the database safe. Technically speaking, it should be fine as-is. But I would imagine that isn't the case everywhere, and if the VPS was used for more things than just hosting this database, allowing different IPs and ports would've made more sense. For now, we're good, but if we begin hosting an API there, this might have to change again.  
-
-
-### Questions answered
-PostgreSQL initially sets up with a superuser/root called postgres. This is _not_ the user to be using in day-to-day, or even general management operations on a particular database level. Instead, a different user is set up for the purpose of the particular database. The new user is the one I will be accessing from outside the VPS control panel, while the user "postgres" will be accessed solely from inside the VPS environment.  
-Another initialization PostgreSQL does is setting up a default database called template1. I'm unsure of its actual purpose, but there's supposedly also a template0 (prestine version) below it. Create new databases around these, don't use them. Potentially template1 could be used as a template that you create others from? That would make sense, but I have not looked into it, and not doing so will likely not hurt me, as I'm setting up a single additional database for now. Might be something to look into later, though!  
-
+## Possible avenues
+Here's some words I've heard, but need to put aside for later:  
+- **Framework add-ons:** Next.js (routing, SSR/SEO)
+- **Tooling:** Vite (fast builds), ESLint/Prettier (consistency)
+- **Styling:** Tailwind (utility-first CSS)
+- **State management:** Redux Toolkit, Zustand
 
 ---
 
-## What's next?
-### Postgression
-Still to-do is actually doing any work with PostgreSQL. I'm comfortable enough in SQL itself to not be too worried, but it'd be good to test it out a bit, see if it works as expected.  
-The database itself needs a schema, which will likely be the very next step. It doesn't need to be perfect, but it should at least handle what Trine brings in for her first batches of data.  
+## IDE? No idea...
+Holy heck this was a can of worms to get into. Everyone swears by their own "IDE", and everyone has their own reasons. Hell, some of them are not IDEs, but editors! And what the heck is the difference there?!  
+After looking left and right, Visual Studio Code was the most obvious choice. But I am lazy when I'm comfortable, and I'm comfortable with Visual Studio (2022), and since I can't see a good reason to get out of this particular IDE, that's where I'll stay.  
+Here's a list of other potential candidates that I considered, in case I change my mind later:  
+- Visual Studio Code (free, extensible, popular) (Editor) (Far most likely alternative)
+- Notepad++ (Windows-only, but lightweight) (Editor)
+- Vim/Neovim (for the hardcore, but steep learning curve) (Linux??)
+- JetBrains WebStorm (paid, but powerful)
+- IntelliJ IDEA (paid, but great for full-stack)
 
+---
 
-### Redis
-I've also mentioned setting up a Redis database for caching timeblocks. This is still in consideration, but this is extremely low priority for now.  
-Timeblocks will be 
-
-
-### Application development when??
-So far I've essentially neglected my second specialization. This is completely on purpose, because it doesn't ~~provide any value~~ block anyone else from progressing their work. The database, however, could potentially. So priorities were had, and Application Development has been the bottom of the list (of two subjects).  
+## One step at a time
+As it stands, everything is still way too new to consider a solid choice. But there's a plan, of sorts, and that can be followed until I learn the holes that might be in my way.  
+Experiments are still to be had, and the connections between the group members' parts are still up in the air.  
