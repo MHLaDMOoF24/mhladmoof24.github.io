@@ -10,7 +10,7 @@ permalink: /pages/timetable.html
   </div>
 
   <div class="text textblock half">
-    <h2>App udvikling 1/2</h2>
+    <h2>App udvikling 2</h2>
     <h3>Torsday 9:45 Thomas/Diaa</h3>
   </div>
 
