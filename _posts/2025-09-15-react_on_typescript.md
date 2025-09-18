@@ -94,7 +94,8 @@ This file has a default for multiply, and three other named exports.
   import multiply from './math';
   console.log(multiply(2, 3)); // Outputs: 6
   ```
-So far I've only used named imports, and I don't see that changing anytime soon. Named imports make it clear what is being used from a module, which can help with readability and maintainability.  
+
+So far I've only used named imports, and I don't see that changing anytime soon. Named imports make it clear what is being used from a module, which helps with both readability and maintainability.  
 
 ---
 
