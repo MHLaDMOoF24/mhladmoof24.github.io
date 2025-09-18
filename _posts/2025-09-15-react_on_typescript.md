@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning the language found"
+title: "Learning the language found - Part 1"
 tags: [research, application]
 ---
 
@@ -99,9 +99,12 @@ So far I've only used named imports, and I don't see that changing anytime soon.
 
 ---
 
-## Immediate goals
+## Upcoming plans
 ### Next steps
 The experiment is still ongoing, and there's a lot of ground to cover. The immediate next steps are:  
 - Dive deeper into React: Learn about hooks, lifecycle methods, and state management.
 - Explore TypeScript features: Understand advanced types, decorators, and modules.
 - Generally get better with the things I've already touched on.
+
+### Part 2?
+The next topic we'll dive into is the functionality of the useState hook, which is a fundamental part of managing state in React components.
