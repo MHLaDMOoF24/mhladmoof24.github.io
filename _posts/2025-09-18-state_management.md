@@ -62,6 +62,10 @@ To recap:
 #### Alternatives?
 Supposedly there are other state management libraries, but this seems to be the built-in way of doing it.  
 
+#### A quick resource that is beyond me
+A video I found that helped me understand state management better, even without having run into the subject of the video myself:  
+- [You Are Using useState Wrong (and how to fix it)](https://www.youtube.com/watch?v=MO-w7Y4zRl0)
+
 ---
 
 ## Part 3?
