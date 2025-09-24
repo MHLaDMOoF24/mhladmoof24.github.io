@@ -114,6 +114,11 @@ h4 + p {
         margin: 1.5rem 0 .75rem;
     }
 
+    .prose h6 {
+        margin: 1rem 0 .5rem;
+        font-style: italic;
+    }
+
     .prose p {
         margin: .75rem 0;
         padding-left: 8px;

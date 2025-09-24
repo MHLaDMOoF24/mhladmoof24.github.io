@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Learning the language found - Part 2"
+title: "Learning the language found - State management (useState)"
 tags: [research, application]
 ---
 
 ## \{introduction\}
 ### \{reasoning\}
-This is a continuation of the previous post, ["Learning the language found - Part 1"](./2025-09-01-react_on_typescript.md), where we started experimenting with the functionality of TypeScript and React.  
+This is a continuation of the previous post, ["Learning the language found - Components, Imports"](./2025-09-15-react_on_typescript.md), where we started experimenting with the functionality of TypeScript and React.  
 This post is a direct continuation of that, and will be mostly consisting of notes and code snippets, explaining my understanding of the different functions I deem potentially necessary for the main project.  
 For now, the functionalities themselves are the very basis of TypeScript and React, and therefore no notes of reasoning will be included, although reasoning will become more relevant as we dig into more niche functions.  
 
@@ -14,6 +14,7 @@ For now, the functionalities themselves are the very basis of TypeScript and Rea
 
 ## New innovations, never before seen! (by me, at least)
 ### State management
+###### useState
 Within React, state management is a core concept that allows components to manage and respond to changes in data.  
 State is used to hold variable object information.  
 When the state changes, React re-renders the component to reflect the new state.  
@@ -62,8 +63,8 @@ To recap:
 #### Alternatives?
 Supposedly there are other state management libraries, but this seems to be the built-in way of doing it.  
 
-#### A quick resource that is beyond me
-A video I found that helped me understand state management better, even without having run into the subject of the video myself:  
+#### A quick resource
+A video I found that helped me understand state management better, even without having run into the issues highlighted in the video myself:  
 - [You Are Using useState Wrong (and how to fix it)](https://www.youtube.com/watch?v=MO-w7Y4zRl0)
 
 ---

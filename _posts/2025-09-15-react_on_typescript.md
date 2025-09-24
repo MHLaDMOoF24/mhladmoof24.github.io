@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning the language found - Part 1"
+title: "Learning the language found - Components, Imports"
 tags: [research, application]
 ---
 
