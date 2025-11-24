@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PostgreSQL stores procedures differently. Also, geopoints."
-tags: [research, database]
+tags: [production, database]
 ---
 
 ## Changing engines  
